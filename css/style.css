@@ -25,6 +25,15 @@ ul {
 .main-nav {
   margin: 0 auto;
   background-color: #e7e7e7;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  font-family: 'Bungee Inline', cursive;
+  color: #202020;
+  padding: .5rem;
+  font-size: 25px;
 }
 
 .nav-list {
@@ -61,6 +70,26 @@ ul {
 .nav-button:active {
   transform: translate(2px);
   box-shadow: none;
+}
+
+/* MAIN DIVS */
+.question {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  padding: 1rem;
+  background-color: #202020;
+  color: #FFFFFF;
+}
+
+.answer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  padding: 1rem;
 }
 
 
