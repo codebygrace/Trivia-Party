@@ -10,7 +10,12 @@ function displayRandomQuestion(){
   })
   .then(function(data){
     data.forEach(function(result){
-      output.innerHTML = `$${result.value} <br> ${result.question}`;
+      if(result.value === null || result.question === ""){
+        displayRandomQuestion();
+      } else {
+        output.innerHTML = `$${result.value} <br> ${result.question}`;
+      }
+      console.log(result);
     });
   }).catch(function(error){
    output.innerHTML += error;
