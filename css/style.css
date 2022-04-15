@@ -1,0 +1,66 @@
+/* GLOBAL STYLES */
+* {
+  font-size: 20px;
+  margin: 0;
+ }
+
+body {
+  font-family: 'Patrick Hand SC', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #595959;
+}
+
+a:hover {
+  color: #202020;
+}
+
+ul {
+  list-style: none;
+}
+
+/* MAIN NAV */
+.main-nav {
+  margin: 0 auto;
+  background-color: #e7e7e7;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item, 
+.nav-search {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.nav-input {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.nav-button {
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #FFFFFF;
+  background-color: #202020;
+  box-shadow: 2px 2px 0 rgba(135, 135, 135, 1);
+  transition: all .2s ease-in-out;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+}
+
+.nav-button:active {
+  transform: translate(2px);
+  box-shadow: none;
+}
+
+
