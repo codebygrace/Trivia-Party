@@ -1,5 +1,5 @@
 const jeopardy = "https://jservice.io/api/random";
-const output = document.querySelector('.question');
+const questionOutput = document.querySelector('.question');
 const newQuestion = document.querySelector('.new-q');
 newQuestion.addEventListener('click', displayRandomQuestion);
 
@@ -13,9 +13,8 @@ function displayRandomQuestion(){
       if(result.value === null || result.question === ""){
         displayRandomQuestion();
       } else {
-        output.innerHTML = `$${result.value} <br> ${result.question}`;
+        questionOutput.innerHTML = `Category: "${result.category.title}" <br> $${result.value} <br> ${result.question}`;
       }
-      console.log(result);
     });
   }).catch(function(error){
    output.innerHTML += error;
