@@ -3,6 +3,9 @@ const questionOutput = document.querySelector('.question');
 const newQuestion = document.querySelector('.new-q');
 const answerButton = document.querySelector('.answer-button');
 var answer = "";
+var value = "";
+var score = "";
+var input = document.querySelector('.answer-input').value;
 newQuestion.addEventListener('click', displayRandomQuestion);
 answerButton.addEventListener('click', getAnswer);
 
@@ -23,16 +26,28 @@ function displayRandomQuestion(){
       }
       console.log(result);
       answer = result.answer;
+      value = result.value;
     });
   })
 }
 
-function getAnswer(){
+function getAnswer(e, displayRandomQuestion){
+  e.preventDefault();
   console.log(answer);
-  console.log(document.querySelector('.answer-input').value);
-  if (document.querySelector('.answer-input').value === answer){
+  console.log(input);
+  if(document.querySelector('.answer-input').value == answer){
+    score = score + value;
+    questionOutput.innerHTML = `
+    Correct!
+    <br>
+    Score: $${score}`;
     console.log("Correct");
   } else {
-    console.log("Try Again");
+    score = score - value;
+    questionOutput.innerHTML = `
+    Incorrect :(
+    <br>
+    Score: $${score}`;
+    console.log("Incorrect");
   }
-}
+ }
