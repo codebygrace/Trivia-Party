@@ -61,16 +61,9 @@ button:active {
   justify-content: center;
 }
 
-.nav-item, 
-.nav-search {
+.nav-item {
   padding: 1rem;
   font-size: 1.5rem;
-}
-
-.nav-input {
-  border: 1px solid transparent;
-  border-radius: 5px;
-  padding: 5px;
 }
 
 /* QUESTION AND ANSWER DIVS */
@@ -112,7 +105,7 @@ button:active {
 
 .answer-button {
   font-size: 30px;
-  padding: 3px 5px;
+  padding: 0 5px;
 }
 
 
