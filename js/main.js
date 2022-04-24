@@ -2,12 +2,17 @@ const jeopardy = "https://jservice.io/api/random";
 const newQuestion = document.querySelector('.new-q');
 const questionOutput = document.querySelector('.question');
 const answerButton = document.querySelector('.answer-button');
+const finishBtn = document.querySelector('.finish');
+const scoreValue = document.querySelector('.score-value');
+
 var answer = "";
 var value = "";
 var score = 0;
 var input = document.querySelector('.answer-input').value;
+
 newQuestion.addEventListener('click', displayRandomQuestion);
 answerButton.addEventListener('click', getAnswer);
+finishBtn.addEventListener('click', finishGame);
 
 function displayRandomQuestion(){
   fetch(jeopardy)
@@ -37,13 +42,23 @@ function getAnswer(event){
     score = score + value;
     questionOutput.innerHTML = `
     Correct!`;
-    document.querySelector('.score-value').innerHTML = `$${score}`;
+    scoreValue.innerHTML = `$${score}`;
     console.log("Correct");
   } else {
     score = score - value;
     questionOutput.innerHTML = `
     Incorrect :(`;
-    document.querySelector('.score-value').innerHTML = `$${score}`;
+    scoreValue.innerHTML = `$${score}`;
     console.log("Incorrect");
   }
+  finalScore = score;
+ }
+
+ function finishGame() {
+  score = finalScore;
+  questionOutput.innerHTML = `Game Over
+  <br>
+  Final Score: $${score}
+  <br>
+  Refresh to Play Again`;
  }
