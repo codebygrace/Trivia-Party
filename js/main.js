@@ -1,10 +1,10 @@
 const jeopardy = "https://jservice.io/api/random";
-const questionOutput = document.querySelector('.question');
 const newQuestion = document.querySelector('.new-q');
+const questionOutput = document.querySelector('.question');
 const answerButton = document.querySelector('.answer-button');
 var answer = "";
 var value = "";
-var score = "";
+var score = 0;
 var input = document.querySelector('.answer-input').value;
 newQuestion.addEventListener('click', displayRandomQuestion);
 answerButton.addEventListener('click', getAnswer);
@@ -24,30 +24,26 @@ function displayRandomQuestion(){
         <br>
         ${result.question}`;
       }
-      console.log(result);
+      console.log(result.answer);
       answer = result.answer;
       value = result.value;
     });
   })
 }
 
-function getAnswer(e, displayRandomQuestion){
-  e.preventDefault();
-  console.log(answer);
-  console.log(input);
+function getAnswer(event){
+  event.preventDefault();
   if(document.querySelector('.answer-input').value == answer){
     score = score + value;
     questionOutput.innerHTML = `
-    Correct!
-    <br>
-    Score: $${score}`;
+    Correct!`;
+    document.querySelector('.score-value').innerHTML = `$${score}`;
     console.log("Correct");
   } else {
     score = score - value;
     questionOutput.innerHTML = `
-    Incorrect :(
-    <br>
-    Score: $${score}`;
+    Incorrect :(`;
+    document.querySelector('.score-value').innerHTML = `$${score}`;
     console.log("Incorrect");
   }
  }

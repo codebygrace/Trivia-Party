@@ -68,15 +68,15 @@ button:active {
 
 /* QUESTION AND ANSWER DIVS */
 .new-q {
-  margin: 0 auto .5rem;
+  margin: auto;
 }
 
 .quiz {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  margin: 1rem;
+  align-items: center;
+  margin: 1rem auto;
   height: 80%;
   width: 50%;
 }
