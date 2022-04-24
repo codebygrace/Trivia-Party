@@ -38,7 +38,7 @@ function displayRandomQuestion(){
 
 function getAnswer(event){
   event.preventDefault();
-  if(document.querySelector('.answer-input').value == answer){
+  if(document.querySelector('.answer-input').value.toLowerCase() == answer.toLowerCase()){
     score = score + value;
     questionOutput.innerHTML = `
     Correct!`;
