@@ -45,8 +45,10 @@ button:active {
 .main-nav {
   margin: 0 auto;
   background-color: #e7e7e7;
-  display: flex;
-  justify-content: space-around;
+}
+
+.nav-link {
+  font-size: 30px;
 }
 
 .logo {
@@ -54,16 +56,6 @@ button:active {
   color: #202020;
   padding: .5rem;
   font-size: 25px;
-}
-
-.nav-list {
-  display: flex;
-  justify-content: center;
-}
-
-.nav-item {
-  padding: 1rem;
-  font-size: 1.5rem;
 }
 
 /* CONTROLS */
@@ -123,4 +115,9 @@ button:active {
   padding: 0 5px;
 }
 
-
+/* MOBILE MEDIA QUERY STYLES */
+@media screen and (max-width: 320px) {
+  .logo {
+    font-size: 20px;
+  }
+}
