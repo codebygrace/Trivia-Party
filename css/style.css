@@ -112,7 +112,7 @@ button:active {
 }
 
 /* MOBILE MEDIA QUERY STYLES */
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 426px) {
   /* NAVBAR */
   .logo {
     font-size: 20px;
