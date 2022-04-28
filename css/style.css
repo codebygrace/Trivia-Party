@@ -47,15 +47,15 @@ button:active {
   background-color: #e7e7e7;
 }
 
-.nav-link {
-  font-size: 30px;
-}
-
 .logo {
   font-family: 'Bungee Inline', cursive;
   color: #202020;
   padding: .5rem;
   font-size: 25px;
+}
+
+.nav-link {
+  font-size: 30px;
 }
 
 /* CONTROLS */
@@ -121,7 +121,7 @@ button:active {
   .nav-link {
     font-size: 20px;
   }
-
+  
   /* CONTROLS */
   .controls {
     margin: .5rem auto 0;
