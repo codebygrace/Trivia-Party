@@ -20,8 +20,8 @@ button {
   padding: 5px;
   border: 1px solid transparent;
   border-radius: 5px;
-  color: #FFFFFF;
-  background-color: #202020;
+  color: #202020;
+  background-color: #FFD23F;
   box-shadow: 2px 2px 0 rgba(135, 135, 135, 1);
   transition: all .2s ease-in-out;
   font-family: 'Patrick Hand SC', cursive;
@@ -44,22 +44,23 @@ button:active {
 
 .logo {
   font-family: 'Bungee Inline', cursive;
-  color: #202020;
+  color: #3BCEAC;
   padding: .5rem;
   font-size: 25px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, .5);
 }
 
 .logo:hover {
-  color: #202020;
+  color: #3BCEAC;
 }
 
 .nav-link {
   font-size: 30px;
-  color: #595959;
+  color: #EE4266;
 }
 
 .nav-link:hover {
-  color: #202020;
+  color: #540D6E;
 }
 
 /* CONTROLS */
@@ -91,8 +92,8 @@ button:active {
 .question {
   font-size: 30px;
   padding: 1rem;
-  background-color: #202020;
-  color: #FFFFFF;
+  background-color: #3BCEAC;
+  color: #202020;
   text-align: center;
   width: 90%;
   height: 50vh;
@@ -106,7 +107,7 @@ button:active {
 .answer-input {
   padding: 5px;
   font-size: 25px;
-  border: 2px solid black;
+  border: 2px solid #202020;
   border-radius: 5px;
 }
 
