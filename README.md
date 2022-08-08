@@ -2,7 +2,7 @@
 
 ## Hosting Link
 
-[https://grace-mills.github.io/Trivia-Party/](https://grace-mills.github.io/Trivia-Party/)
+[https://codebygrace.github.io/Trivia-Party/](https://grace-mills.github.io/Trivia-Party/)
 
 ## API Source
 
