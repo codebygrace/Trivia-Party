@@ -10,11 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/media.css">
 
   <title>Trivia Party! - Single Player Trivia Game</title>
 </head>
@@ -22,17 +22,17 @@
 <body>
   <nav class="main-nav navbar navbar-expand-lg bg-light">
     <div class="container-fluid d-flex justify-content-between">
-      <a class="navbar-brand logo" href="index.html">TRIVIA PARTY!</a>
+      <a class="navbar-brand logo" href="../index.html">TRIVIA PARTY!</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav nav-list">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="html/about.html">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="http://jservice.io/">jService API</a></li>
@@ -41,28 +41,10 @@
     </div>
   </nav>
 
-  <div class="controls">
-    <div class="score">
-      Score:
-      <p class="score-value">0</p>
-    </div>
-
-    <div class="control-btns">
-      <button class="new-q">Random Question</button>
-      <button class="finish">Finish Game</button>
-    </div>
-  </div>
-
-  <div class="quiz">
-    <div class="question"></div>
-    <div class="answer">
-      <form action="#" class="answer-form"
-      autocomplete="off">
-        <input type="text" name="answer-input" class="answer-input" placeholder="Answer Here"
-        onfocus="this.value=''">
-        <button type="submit" class="answer-button">Submit</button>
-      </form>
-    </div>
+  <div class="about-container">
+    <h1 class="about-title">About Trivia Party</h1>
+    <p class="about-text"></p>
+    <p class="about-github"><a href="https://github.com/codebygrace/Trivia-Party" class="repo-link">Click here</a> to view the Trivia Party repository on GitHub.</p>
   </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>

@@ -1,17 +1,3 @@
-// TOGGLE THEME
-const themeBtn = document.querySelector('.switch');
-const theme = document.querySelector('#themeSwitch');
-
-themeBtn.addEventListener('click', changeTheme);
-
-function changeTheme(){
-  if (theme.getAttribute("href") == "css/style.css") {
-    theme.href = "css/color.css";
-  } else {
-    theme.href = "css/style.css";
-  }
-}
-
 // API FUNCTIONALITY
 const jeopardy = "https://jservice.io/api/random";
 const newQuestion = document.querySelector('.new-q');

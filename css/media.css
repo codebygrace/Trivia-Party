@@ -1,0 +1,64 @@
+/* MOBILE MEDIA QUERY STYLES */
+@media only screen and (max-width: 426px) {
+    /* NAVBAR */
+    .logo {
+      font-size: 20px;
+    }
+  
+    .nav-link {
+      font-size: 20px;
+    }
+    
+    /* CONTROLS */
+    .controls {
+      margin: .5rem auto 0;
+    }
+    
+    .score {
+      padding-right: 6.5rem;
+      padding-left: 1rem;
+      justify-self: center;
+      align-self: center;
+    }
+  
+    .new-q {
+      margin-bottom: .5rem;
+      font-size: 15px;
+    }
+    
+    .finish {
+      padding: 5px 23px;
+      font-size: 15px;
+    }
+  
+    /* QUESTION AND ANSWER DIVS */
+    .quiz {
+      width: 100%;
+      height: 70vh;
+      margin-top: .5rem;
+    }
+  
+    .question {
+      margin: 0 auto;
+      font-size: 15px;
+      width: 95%;
+    }
+  
+    .answer {
+      display: flex;
+      flex-direction: column;
+      margin-top: -.5rem;
+    }
+  
+    .answer-input {
+      font-size: 20px;
+      width: 100%;
+    }
+    
+    .answer-button {
+      font-size: 20px;
+      margin-top: .5rem;
+      padding: 3px;
+      width: 100%;
+    }
+  }
