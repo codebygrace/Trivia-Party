@@ -2,7 +2,8 @@
 * {
   font-size: 20px;
   margin: 0;
- }
+  padding: 0;
+}
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -34,54 +35,64 @@ button:hover {
 /* MAIN NAV */
 .navbar {
   margin: 0 auto;
-  background-color: #e7e7e7;
-}
-
-.nav-container {
-  padding: 0.5rem;
+  padding: 0;
+  background-color: #E7E7E7;
 }
 
 .logo {
   font-family: 'Oi', cursive;
   color: #202020;
-  padding: .5rem;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .logo:hover {
   color: #202020;
 }
 
-.nav-link {
-  font-size: 30px;
-  font-weight: 600;
-  color: #595959;
+.nav-item {
+  margin: 10px;
+  border-radius: 10px;
+  transition: all .1s ease-in-out;
 }
 
-.nav-link:hover {
+.nav-item:hover {
+  background-color: #202020;
+  color: #E7E7E7;
+}
+
+.nav-link {
+  padding: 5px;
+  font-size: 20px;  
+  font-weight: 600;
   color: #202020;
 }
 
-.menu-toggle {
+.nav-link:hover {
+  color: #E7E7E7;
+}
+
+.navbar-toggler {
   width: 40px;
   height: 40px;
   padding: 5px;
   color: transparent;
   background-color: #E7E7E7;
-  box-shadow: 2px 2px 0 rgba(135, 135, 135, 1);
-  border: 1px solid #000;
-  transition: all .1s ease-in-out;
+  border: 1px solid #202020;
+  transition: all .2s ease-in-out;
 }
 
-.menu-toggle:active {
-  transform: translate(2px);
-  box-shadow: none;
+.navbar-toggler:hover {
+  background-color: #202020;
+}
+
+.navbar-toggler:hover .toggle-icon {
+  border-color: #E7E7E7;
 }
 
 .toggle-icon {
   display: block;
   width: 90%;
-  border: 1.50px solid #000;
+  border: 1.50px solid #202020;
   border-radius: 10px;
   margin: 5px auto;
 }
@@ -118,6 +129,7 @@ button:hover {
   background-color: #202020;
   color: #FFFFFF;
   text-align: center;
+  border-radius: 15px;
   width: 90%;
   height: 50vh;
 }
