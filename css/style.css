@@ -22,24 +22,23 @@ button {
   border-radius: 5px;
   color: #FFFFFF;
   background-color: #202020;
-  box-shadow: 2px 2px 0 rgba(135, 135, 135, 1);
   transition: all .2s ease-in-out;
   font-weight: 600;
-}
-
-button:hover {
   cursor: pointer;
 }
 
-button:active {
-  transform: translate(2px);
-  box-shadow: none;
+button:hover {
+  background-color: #E7E7E7;
 }
 
 /* MAIN NAV */
-.main-nav {
+.navbar {
   margin: 0 auto;
   background-color: #e7e7e7;
+}
+
+.nav-container {
+  padding: 0.5rem;
 }
 
 .logo {
@@ -55,11 +54,36 @@ button:active {
 
 .nav-link {
   font-size: 30px;
+  font-weight: 600;
   color: #595959;
 }
 
 .nav-link:hover {
   color: #202020;
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  color: transparent;
+  background-color: #E7E7E7;
+  box-shadow: 2px 2px 0 rgba(135, 135, 135, 1);
+  border: 1px solid #000;
+  transition: all .1s ease-in-out;
+}
+
+.menu-toggle:active {
+  transform: translate(2px);
+  box-shadow: none;
+}
+
+.toggle-icon {
+  display: block;
+  width: 90%;
+  border: 1.50px solid #000;
+  border-radius: 10px;
+  margin: 5px auto;
 }
 
 /* CONTROLS */
