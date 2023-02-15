@@ -1,4 +1,4 @@
-/* GLOBAL STYLES */
+/* UTILITIES */
 * {
   font-size: 20px;
   margin: 0;
@@ -32,11 +32,17 @@ button:hover {
   background-color: #E7E7E7;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* MAIN NAV */
 .navbar {
   margin: 0 auto;
-  padding: 0;
-  background-color: #E7E7E7;
+  padding: 5px;
+  background-color: #FAFAFA;
 }
 
 .logo {
@@ -57,7 +63,7 @@ button:hover {
 
 .nav-item:hover {
   background-color: #202020;
-  color: #E7E7E7;
+  color: #FAFAFA;
 }
 
 .nav-link {
@@ -68,7 +74,7 @@ button:hover {
 }
 
 .nav-link:hover {
-  color: #E7E7E7;
+  color: #FAFAFA;
 }
 
 .navbar-toggler {
@@ -76,7 +82,7 @@ button:hover {
   height: 40px;
   padding: 5px;
   color: transparent;
-  background-color: #E7E7E7;
+  background-color: #FAFAFA;
   border: 1px solid #202020;
   transition: all .2s ease-in-out;
 }
@@ -86,7 +92,7 @@ button:hover {
 }
 
 .navbar-toggler:hover .toggle-icon {
-  border-color: #E7E7E7;
+  border-color: #FAFAFA;
 }
 
 .toggle-icon {
@@ -99,31 +105,26 @@ button:hover {
 
 /* CONTROLS */
 .controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem auto;
+  width: 60%;
 }
 
-.score {
-  padding-right: 14rem;
-}
-
+.new-q,
 .finish {
-  padding: 5px 25px;
+  padding: 5px 20px;
 }
 
 /* QUESTION AND ANSWER DIVS */
 .quiz {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem auto;
-  height: 80%;
+  margin: auto;
+  height: 90%;
   width: 75%;
 }
 
 .question {
+  flex-direction: column;
   font-size: 30px;
   padding: 1rem;
   background-color: #202020;
@@ -131,7 +132,7 @@ button:hover {
   text-align: center;
   border-radius: 15px;
   width: 90%;
-  height: 50vh;
+  height: 55vh;
 }
 
 .answer {
@@ -141,12 +142,19 @@ button:hover {
 
 .answer-input {
   padding: 5px;
-  font-size: 25px;
-  border: 2px solid black;
+  font-size: 20px;
+  border: 1px solid black;
   border-radius: 5px;
 }
 
 .answer-button {
-  font-size: 30px;
-  padding: 0 5px;
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+/* ABOUT */
+.about-container {
+  margin: 1rem auto;
+  width: 80%;
+  flex-direction: column;
 }
