@@ -29,7 +29,9 @@ button {
 }
 
 button:hover {
-  background-color: #E7E7E7;
+  color: #202020;
+  background-color: #FFF;
+  border-color: #202020;
 }
 
 .flex {
