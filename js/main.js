@@ -1,4 +1,4 @@
-// API FUNCTIONALITY
+// VARIABLE DECLARATION
 const jeopardy = "https://jservice.io/api/random";
 const newQuestion = document.querySelector('.new-q');
 const questionOutput = document.querySelector('.question');
@@ -11,10 +11,12 @@ var value = "";
 var score = 0;
 var input = document.querySelector('.answer-input').value;
 
+// EVENT LISTENERS
 newQuestion.addEventListener('click', displayRandomQuestion);
 answerButton.addEventListener('click', getAnswer);
 finishBtn.addEventListener('click', finishGame);
 
+// FETCH API & OUTPUT CATEGORY, VALUE, AND QUESTION ON 'RANDOM QUESTION' BTN PRESS
 function displayRandomQuestion(){
   fetch(jeopardy)
   .then(function(res){
@@ -26,7 +28,7 @@ function displayRandomQuestion(){
       } else {
         questionOutput.innerHTML = `Category: "${result.category.title}"
         <br>
-        $${result.value} 
+        $${result.value}
         <br>
         ${result.question}`;
       }
@@ -37,6 +39,7 @@ function displayRandomQuestion(){
   })
 }
 
+// COLLECT USER INPUT FROM ANSWER FIELD AND UPDATE SCORE
 function getAnswer(event){
   event.preventDefault();
   if(document.querySelector('.answer-input').value.toLowerCase() == answer.toLowerCase()){
@@ -53,13 +56,15 @@ function getAnswer(event){
     console.log("Incorrect");
   }
   finalScore = score;
- }
+}
 
- function finishGame() {
+// END GAME AND OUTPUT FINAL SCORE
+function finishGame() {
   score = finalScore;
   questionOutput.innerHTML = `Game Over
   <br>
   Final Score: $${score}
   <br>
   Refresh to Play Again`;
+  console.log("DONE");
  }
