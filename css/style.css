@@ -43,7 +43,7 @@ button:hover {
 /* MAIN NAV */
 .navbar {
   margin: 0 auto;
-  padding: 5px;
+  padding: 0.5rem;
   background-color: #FAFAFA;
 }
 
@@ -125,7 +125,7 @@ button:hover {
 /* QUESTION AND ANSWER DIVS */
 .quiz {
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto;
   height: 90%;
   width: 75%;
 }
@@ -141,24 +141,6 @@ button:hover {
   height: 55vh;
 }
 
-.category,
-.question-value,
-.question-text {
-  font-size: 30px;
-}
-
-.category {
-  font-weight: 600;
-}
-
-.question-value {
-  font-weight: 400;
-}
-
-.question-text {
-  font-weight: 300;
-}
-
 .answer {
   padding: 1rem;
   margin: 0 auto;
@@ -167,13 +149,13 @@ button:hover {
 .answer-input {
   padding: 5px;
   font-size: 20px;
-  border: 1px solid black;
+  border: 1px solid #202020;
   border-radius: 5px;
 }
 
 .answer-button {
   font-size: 20px;
-  padding: 5px 15px;
+  padding: 0.5rem 1rem;
 }
 
 /* ABOUT */

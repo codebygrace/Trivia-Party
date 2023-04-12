@@ -1,5 +1,58 @@
 @media only screen and (max-width: 1024px) {
+    /* CONTROLS */
+    .controls {
+        width: 75%;
+    }
+    
+    .score {
+        align-self: center;
+    }
 
+    .control-btns {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+    }
+    
+    .new-q {
+        width: 54%;
+    }
+
+    .finish {
+        width: 44%;
+    }
+    
+    /* QUESTION AND ANSWER DIVS */
+    .quiz {
+        width: 100%;
+        height: 70vh;
+        margin-top: 0.5rem;
+    }
+
+    .question {
+        margin: 0 auto;
+        font-size: 20px;
+        width: 80%;
+    }
+    
+    .answer {
+        width: 80%;
+    }
+
+    .answer-form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .answer-input {
+        width: 60%;
+    }
+
+    .answer-button {
+        width: 35%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -32,14 +85,7 @@
     }
     
     /* QUESTION AND ANSWER DIVS */
-    .quiz {
-        width: 100%;
-        height: 70vh;
-        margin-top: 0.5rem;
-    }
-
     .question {
-        margin: 0 auto;
         font-size: 15px;
         width: 95%;
     }
@@ -47,25 +93,32 @@
     .answer {
         width: 95%;
     }
-
-    .answer-form {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-    .answer-input {
-        width: 60%;
-    }
-
-    .answer-button {
-        width: 35%;
-    }
 }
 
 @media only screen and (max-width: 480px) {
     /* NAVBAR */
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+
+    .navbar-toggler {
+        width: 35px;
+        height: 35px;
+    }
+
+    .toggle-icon {
+        width: 90%;
+        margin: 5px auto 3px;
+    }
+
+    .bar1 {
+        margin-top: 3px;
+    }
+
     .nav-link {
         font-size: 15px;
     }
@@ -75,27 +128,35 @@
         width: 90%;
     }
 
+    .control-btns {
+        flex-direction: column;
+        width: 75%;
+        gap: 0.5rem;
+    }
+
     .new-q,
     .finish {
-        font-size: 15px;
+        width: 80%;
+        font-size: 12px;
+        padding: 0.5rem;
+        align-self: flex-end;
     }
 
     /* QUESTION AND ANSWER DIVS */
-    .answer {
-        flex-direction: column;
-        margin-top: -.5rem;
+    .question {
+        height: 45vh;
     }
 
-    .answer-input {
+    .answer,
+    .answer-input,
+    .answer-button {
+        padding: 0.5rem;
         font-size: 15px;
         width: 100%;
     }
-    
-    .answer-button {
-        font-size: 20px;
-        margin-top: .5rem;
-        padding: 3px;
-        width: 100%;
+
+    .answer-form {
+        flex-direction: column;
     }
 }
 
@@ -105,17 +166,31 @@
         font-size: 10px;
     }
 
-    .navbar-toggler {
-        width: 30px;
-        height: 30px;
-    }
-
-    .toggle-icon {
-        width: 85%;
-        margin: 3px auto;
-    }
-
     /* CONTROLS */
+    .controls {
+        width: 90%;
+    }
+
+    .new-q,
+    .finish {
+        font-size: 10px;
+    }
 
     /* QUESTION AND ANSWER DIVS */
+    .answer {
+        flex-direction: column;
+        margin-top: -0.5rem;
+    }
+
+    .answer-input {
+        font-size: 15px;
+        width: 100%;
+    }
+    
+    .answer-button {
+        font-size: 20px;
+        margin-top: 0.5rem;
+        padding: 3px;
+        width: 100%;
+    }
 }
