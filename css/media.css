@@ -65,12 +65,6 @@
         align-self: center;
     }
 
-    .control-btns {
-        display: flex;
-        justify-content: space-between;
-        width: 75%;
-    }
-
     .new-q,
     .finish {
         font-size: 15px;
@@ -130,7 +124,6 @@
 
     .control-btns {
         flex-direction: column;
-        width: 75%;
         gap: 0.5rem;
     }
 
@@ -162,35 +155,81 @@
 
 @media only screen and (max-width: 246px) {
     /* NAVBAR */
+    .nav-container.container-fluid {
+        padding: 0 5px;
+    }
+
     .logo {
         font-size: 10px;
     }
 
+    .mobile-hide {
+        display: none;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .navbar-toggler {
+        width: 30px;
+        height: 30px;
+    }
+
+    .toggle-icon {
+        margin: 3px auto;
+    }
+
+    .bar1 {
+        margin-top: 2.5px;
+    }
+
     /* CONTROLS */
     .controls {
-        width: 90%;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .control-btns {
+        width: 95%;
+    }
+
+    .score-value {
+        display: inline-block;
     }
 
     .new-q,
     .finish {
         font-size: 10px;
+        width: 100%;
     }
 
     /* QUESTION AND ANSWER DIVS */
+    .quiz {
+        height: auto;
+    }
+
+    .question {
+        border-radius: 5px;
+        height: 50vh;
+        font-size: 10px;
+    }
+
     .answer {
-        flex-direction: column;
-        margin-top: -0.5rem;
+        margin-top: 3px;
+        padding: 3px;
+    }
+
+    .answer-form {
+        gap: 3px;
     }
 
     .answer-input {
-        font-size: 15px;
-        width: 100%;
+        padding: 3px 5px;
     }
-    
+
     .answer-button {
-        font-size: 20px;
-        margin-top: 0.5rem;
-        padding: 3px;
-        width: 100%;
+        padding: 5px;
     }
 }

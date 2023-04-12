@@ -57,6 +57,10 @@ button:hover {
   color: #202020;
 }
 
+.mobile-hide {
+  font-size: inherit;
+}
+
 .nav-item {
   margin: 10px;
   border-radius: 10px;

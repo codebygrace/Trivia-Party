@@ -1,5 +1,11 @@
-# Trivia Party! 
+# Trivia Party! (Under (Re-)Construction)
 A jService API Project by Grace Mills
+
+## Updates
+
+- finished updating CSS to make website more responsive
+
+- next update involves improving functionality so that answers without articles are accepted  
 
 ## Hosting Link
 
@@ -20,6 +26,7 @@ At the present moment, Trivia Party only accepts ***exact answers***, including 
 - HTML
 - CSS
 - JavaScript
+- Bootstrap
 
 ## User Stories
 
